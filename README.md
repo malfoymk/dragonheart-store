@@ -2,7 +2,7 @@
 
 E-commerce completo com frontend moderno, backend Node.js, PostgreSQL e painel administrativo.
 
-Acesso ao site em : https://startling-cendol-e77d87.netlify.app
+Acesso a previa do site em : https://startling-cendol-e77d87.netlify.app
 
 ---
 
