@@ -1,0 +1,406 @@
+/* Dragon Heart - Estilos Customizados */
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0A0A0A 0%, #1a0a1a 50%, #0A0A0A 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Utilitários */
+.text-gradient {
+    background: linear-gradient(135deg, #FF1493 0%, #C930AE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.border-gradient {
+    border-image: linear-gradient(135deg, #FF1493, #C930AE) 1;
+}
+
+.bg-gradient-dh {
+    background: linear-gradient(135deg, rgba(255, 20, 147, 0.1) 0%, rgba(75, 0, 130, 0.1) 100%);
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+}
+
+/* Animações */
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px); 
+    }
+    50% { 
+        transform: translateY(-20px); 
+    }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0% { 
+        background-position: -1000px 0; 
+    }
+    100% { 
+        background-position: 1000px 0; 
+    }
+}
+
+.shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+    background-size: 1000px 100%;
+    animation: shimmer 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+/* Navegação */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 20, 147, 0.2);
+}
+
+/* Botões */
+.btn-primary {
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #FF1493, #4B0082);
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    padding: 1rem 2rem;
+    border: 2px solid #C930AE;
+    color: #C930AE;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #C930AE;
+    color: #0A0A0A;
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #FF1493, #4B0082);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-small:hover {
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+}
+
+.btn-gold {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #C930AE, #DAA520);
+    color: #0A0A0A;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.btn-purple {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #4B0082, #6A0DAD);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-purple:hover {
+    box-shadow: 0 0 30px rgba(75, 0, 130, 0.6);
+}
+
+.btn-outline {
+    padding: 1rem 2rem;
+    border: 2px solid #FF1493;
+    color: #FF1493;
+    border-radius: 9999px;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #FF1493;
+    color: white;
+}
+
+/* Cards de Produto */
+.product-card {
+    background: linear-gradient(135deg, rgba(255, 20, 147, 0.1) 0%, rgba(75, 0, 130, 0.1) 100%);
+    border: 1px solid rgba(255, 20, 147, 0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    border-color: rgba(255, 20, 147, 0.5);
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+    transform: translateY(-8px);
+}
+
+/* Categoria Cards */
+.category-card {
+    background: linear-gradient(135deg, rgba(255, 20, 147, 0.1) 0%, rgba(75, 0, 130, 0.1) 100%);
+    border: 1px solid rgba(255, 20, 147, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    border-color: rgba(255, 20, 147, 0.5);
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+    transform: translateY(-8px);
+}
+
+.category-card.gold {
+    border-color: rgba(255, 215, 0, 0.2);
+}
+
+.category-card.gold:hover {
+    border-color: rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.category-card.purple {
+    border-color: rgba(75, 0, 130, 0.2);
+}
+
+.category-card.purple:hover {
+    border-color: rgba(75, 0, 130, 0.5);
+    box-shadow: 0 0 30px rgba(75, 0, 130, 0.6);
+}
+
+.category-card.pink {
+    border-color: rgba(255, 105, 180, 0.2);
+}
+
+.category-card.pink:hover {
+    border-color: rgba(255, 105, 180, 0.5);
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+}
+
+/* Badges */
+.badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.badge-new {
+    background: #FF1493;
+    color: white;
+}
+
+.badge-top {
+    background: #C930AE;
+    color: #0A0A0A;
+}
+
+.badge-exclusive {
+    background: #4B0082;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-secondary {
+        font-size: 1rem;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    nav {
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Transições suaves */
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Menu Mobile */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(255, 20, 147, 0.2);
+    z-index: 40;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 1rem 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 20, 147, 0.1);
+}
+
+.mobile-menu a:hover {
+    color: #FF1493;
+}
+
+/* Loading State */
+.btn-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid transparent;
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, #FF1493, #4B0082);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    animation: slideIn 0.3s ease;
+    display: none;
+}
+
+.toast.show {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Seleção de texto */
+::selection {
+    background: #FF1493;
+    color: white;
+}
+
+::-moz-selection {
+    background: #FF1493;
+    color: white;
+}

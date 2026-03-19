@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Heart - Personalizados e Papelaria Geek</title>
+    <meta name="description" content="Onde hobby e criatividade completam sua vida. Produtos personalizados e papelaria para o universo geek.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dh-magenta': '#FF1493',
+                        'dh-pink': '#FF69B4',
+                        'dh-gold': '#C930AE',
+                        'dh-gold-dark': '#DAA520',
+                        'dh-purple': '#4B0082',
+                        'dh-purple-light': '#6A0DAD',
+                        'dh-dark': '#0A0A0A',
+                        'dh-darker': '#000000',
+                    },
+                    fontFamily: {
+                        'display': ['Cinzel', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '88': '22rem',
+                        '128': '32rem',
+                    },
+                    boxShadow: {
+                        'glow-magenta': '0 0 20px rgba(255, 20, 147, 0.5)',
+                        'glow-gold': '0 0 20px rgba(255, 215, 0, 0.5)',
+                        'glow-purple': '0 0 30px rgba(75, 0, 130, 0.6)',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-white antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-dh-darker/80 backdrop-blur-md border-b border-dh-magenta/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-dh-magenta to-dh-purple rounded-lg flex items-center justify-center shadow-glow-magenta">
+                        <span class="text-2xl font-display font-bold text-dh-gold">DH</span>
+                    </div>
+                    <div>
+                        <h1 class="font-display text-xl font-bold text-gradient">Dragon Heart</h1>
+                        <p class="text-xs text-gray-400">Personalizados & Papelaria</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#produtos" class="text-sm font-medium hover:text-dh-magenta transition-colors">Produtos</a>
+                    <a href="#sobre" class="text-sm font-medium hover:text-dh-magenta transition-colors">Sobre</a>
+                    <a href="#categorias" class="text-sm font-medium hover:text-dh-magenta transition-colors">Categorias</a>
+                    <a href="#contato" class="text-sm font-medium hover:text-dh-magenta transition-colors">Contato</a>
+                    <button class="px-6 py-2 bg-gradient-to-r from-dh-magenta to-dh-purple rounded-full text-sm font-semibold hover:shadow-glow-magenta transition-all">
+                        Catálogo
+                    </button>
+                </div>
+                
+                <button class="md:hidden text-dh-magenta">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-dh-magenta rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-dh-purple rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-128 h-128 bg-dh-gold opacity-10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="inline-block px-4 py-2 bg-dh-purple/30 border border-dh-magenta/50 rounded-full">
+                        <span class="text-sm font-medium text-dh-pink">✨ Onde hobby e criatividade completam sua vida</span>
+                    </div>
+                    
+                    <h1 class="font-display text-5xl md:text-7xl font-black leading-tight">
+                        <span class="text-gradient">Dragon Heart</span>
+                        <br>
+                        <span class="text-white">Personalizados</span>
+                        <br>
+                        <span class="text-dh-gold">& Papelaria</span>
+                    </h1>
+                    
+                    <p class="text-lg text-gray-300 leading-relaxed max-w-xl">
+                        Transforme sua paixão geek em produtos únicos. Cadernos personalizados, adesivos, canecas e muito mais para quem vive o universo nerd com estilo.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="px-8 py-4 bg-gradient-to-r from-dh-magenta to-dh-purple rounded-full font-semibold text-lg hover:shadow-glow-magenta transition-all hover:scale-105">
+                            Ver Produtos
+                        </button>
+                        <button class="px-8 py-4 border-2 border-dh-gold text-dh-gold rounded-full font-semibold text-lg hover:bg-dh-gold hover:text-dh-darker transition-all">
+                            Personalize Agora
+                        </button>
+                    </div>
+                    
+                    <div class="flex items-center gap-8 pt-4">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-dh-magenta">500+</p>
+                            <p class="text-sm text-gray-400">Produtos</p>
+                        </div>
+                        <div class="w-px h-12 bg-dh-purple"></div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-dh-gold">1000+</p>
+                            <p class="text-sm text-gray-400">Clientes Felizes</p>
+                        </div>
+                        <div class="w-px h-12 bg-dh-purple"></div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold text-dh-pink">100%</p>
+                            <p class="text-sm text-gray-400">Personalizado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative animate-float">
+                    <div class="relative w-full aspect-square max-w-lg mx-auto">
+                        <div class="absolute inset-0 bg-gradient-to-br from-dh-magenta/20 to-dh-purple/20 rounded-3xl rotate-6 blur-xl"></div>
+                        <div class="relative bg-dh-dark/50 backdrop-blur-sm border-2 border-dh-magenta/30 rounded-3xl p-8 shadow-glow-purple">
+                            <img src="assets/images/logo.jpeg" alt="Dragon Heart Logo" class="w-full h-full object-contain shimmer">
+                        </div>
+                        <div class="absolute -top-6 -right-6 w-24 h-24 bg-dh-gold/20 rounded-full blur-2xl"></div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-dh-magenta/20 rounded-full blur-2xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-dh-magenta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Categorias Section -->
+    <section id="categorias" class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-gradient">Categorias</span> Épicas
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Explore nosso universo de produtos personalizados para todos os fãs
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group bg-gradient-dh border border-dh-magenta/20 rounded-2xl p-6 hover-lift hover:border-dh-magenta/50 hover:shadow-glow-magenta cursor-pointer">
+                    <div class="w-16 h-16 bg-gradient-to-br from-dh-magenta to-dh-purple rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-2 text-white">Cadernos & Agendas</h3>
+                    <p class="text-gray-400 text-sm">Personalizados com seus personagens favoritos</p>
+                </div>
+                
+                <div class="group bg-gradient-dh border border-dh-gold/20 rounded-2xl p-6 hover-lift hover:border-dh-gold/50 hover:shadow-glow-gold cursor-pointer">
+                    <div class="w-16 h-16 bg-gradient-to-br from-dh-gold to-dh-gold-dark rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-dh-darker" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-2 text-white">Adesivos</h3>
+                    <p class="text-gray-400 text-sm">Designs exclusivos para decorar tudo</p>
+                </div>
+                
+                <div class="group bg-gradient-dh border border-dh-purple/20 rounded-2xl p-6 hover-lift hover:border-dh-purple/50 hover:shadow-glow-purple cursor-pointer">
+                    <div class="w-16 h-16 bg-gradient-to-br from-dh-purple to-dh-purple-light rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-2 text-white">Canecas & Copos</h3>
+                    <p class="text-gray-400 text-sm">Seu café com estilo geek</p>
+                </div>
+                
+                <div class="group bg-gradient-dh border border-dh-pink/20 rounded-2xl p-6 hover-lift hover:border-dh-pink/50 hover:shadow-glow-magenta cursor-pointer">
+                    <div class="w-16 h-16 bg-gradient-to-br from-dh-pink to-dh-magenta rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-bold mb-2 text-white">Itens Especiais</h3>
+                    <p class="text-gray-400 text-sm">Produtos únicos e colecionáveis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section id="produtos" class="py-24 bg-dh-darker/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">
+                    Produtos em <span class="text-gradient">Destaque</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Os favoritos da comunidade geek
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-gradient-dh border border-dh-magenta/20 rounded-2xl overflow-hidden hover-lift hover:border-dh-magenta/50 hover:shadow-glow-magenta">
+                    <div class="aspect-square bg-gradient-to-br from-dh-purple/20 to-dh-magenta/20 flex items-center justify-center relative overflow-hidden">
+                        <img src="aa.png" alt="Caderno Anime Edition" class="w-full h-full object-cover">
+                        <div class="absolute top-4 right-4 px-3 py-1 bg-dh-magenta rounded-full text-xs font-bold">NOVO</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display text-xl font-bold mb-2">FunkoPOP Vecna</h3>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-dh-gold">R$ 45,90</span>
+                            <button class="px-4 py-2 bg-gradient-to-r from-dh-magenta to-dh-purple rounded-lg text-sm font-semibold hover:shadow-glow-magenta transition-all">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group bg-gradient-dh border border-dh-gold/20 rounded-2xl overflow-hidden hover-lift hover:border-dh-gold/50 hover:shadow-glow-gold">
+                    <div class="aspect-square bg-gradient-to-br from-dh-gold/20 to-dh-purple/20 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <svg class="w-32 h-32 text-dh-magenta/30 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                        </svg>
+                        <div class="absolute top-4 right-4 px-3 py-1 bg-dh-gold text-dh-darker rounded-full text-xs font-bold">TOP</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display text-xl font-bold mb-2">Pack Adesivos RPG</h3>
+                        <p class="text-gray-400 text-sm mb-4">50 adesivos temáticos de RPG</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-dh-gold">R$ 29,90</span>
+                            <button class="px-4 py-2 bg-gradient-to-r from-dh-gold to-dh-gold-dark text-dh-darker rounded-lg text-sm font-semibold hover:shadow-glow-gold transition-all">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group bg-gradient-dh border border-dh-purple/20 rounded-2xl overflow-hidden hover-lift hover:border-dh-purple/50 hover:shadow-glow-purple">
+                    <div class="aspect-square bg-gradient-to-br from-dh-magenta/20 to-dh-gold/20 flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <svg class="w-32 h-32 text-dh-purple/30 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                        <div class="absolute top-4 right-4 px-3 py-1 bg-dh-purple rounded-full text-xs font-bold">EXCLUSIVO</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-display text-xl font-bold mb-2">Caneca Gamer RGB</h3>
+                        <p class="text-gray-400 text-sm mb-4">Design exclusivo, 350ml</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-dh-gold">R$ 39,90</span>
+                            <button class="px-4 py-2 bg-gradient-to-r from-dh-purple to-dh-purple-light rounded-lg text-sm font-semibold hover:shadow-glow-purple transition-all">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="px-8 py-4 border-2 border-dh-magenta text-dh-magenta rounded-full font-semibold hover:bg-dh-magenta hover:text-white transition-all">
+                    Ver Todos os Produtos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-dh-magenta rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-dh-purple rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="font-display text-4xl md:text-5xl font-bold">
+                        Onde <span class="text-gradient">Hobby</span> e <span class="text-dh-gold">Criatividade</span> Completam Sua Vida
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        No Dragon Heart, acreditamos que cada fã merece produtos que expressem sua paixão. Criamos itens personalizados de alta qualidade para quem vive intensamente o universo geek.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-dh-magenta/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-dh-magenta" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">100% Personalizado</h4>
+                                <p class="text-gray-400 text-sm">Cada produto é único e feito especialmente para você</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-dh-gold/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-dh-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Qualidade Premium</h4>
+                                <p class="text-gray-400 text-sm">Materiais de primeira linha em todos os produtos</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-dh-purple/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-dh-purple-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white mb-1">Entrega Rápida</h4>
+                                <p class="text-gray-400 text-sm">Seu pedido chega rapidinho para você aproveitar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gradient-dh border border-dh-magenta/20 rounded-2xl p-6 text-center">
+                        <p class="text-4xl font-bold text-dh-magenta mb-2">5+</p>
+                        <p class="text-gray-400 text-sm">Anos de Experiência</p>
+                    </div>
+                    <div class="bg-gradient-dh border border-dh-gold/20 rounded-2xl p-6 text-center">
+                        <p class="text-4xl font-bold text-dh-gold mb-2">10k+</p>
+                        <p class="text-gray-400 text-sm">Produtos Vendidos</p>
+                    </div>
+                    <div class="bg-gradient-dh border border-dh-purple/20 rounded-2xl p-6 text-center">
+                        <p class="text-4xl font-bold text-dh-purple-light mb-2">98%</p>
+                        <p class="text-gray-400 text-sm">Satisfação</p>
+                    </div>
+                    <div class="bg-gradient-dh border border-dh-pink/20 rounded-2xl p-6 text-center">
+                        <p class="text-4xl font-bold text-dh-pink mb-2">24h</p>
+                        <p class="text-gray-400 text-sm">Suporte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-dh-magenta/10 via-dh-purple/10 to-dh-gold/10"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <h2 class="font-display text-4xl md:text-6xl font-bold">
+                    Pronto para <span class="text-gradient">Personalizar</span>?
+                </h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Crie produtos únicos que expressam sua paixão pelo universo geek. Comece agora!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="px-10 py-5 bg-gradient-to-r from-dh-magenta to-dh-purple rounded-full font-bold text-lg hover:shadow-glow-magenta transition-all hover:scale-105">
+                        Começar Agora
+                    </button>
+                    <button class="px-10 py-5 border-2 border-dh-gold text-dh-gold rounded-full font-bold text-lg hover:bg-dh-gold hover:text-dh-darker transition-all">
+                        Falar com Especialista
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-dh-darker border-t border-dh-magenta/20 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-dh-magenta to-dh-purple rounded-lg flex items-center justify-center">
+                            <span class="text-lg font-display font-bold text-dh-gold">DH</span>
+                        </div>
+                        <span class="font-display text-lg font-bold text-gradient">Dragon Heart</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Onde hobby e criatividade completam sua vida.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Produtos</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#categorias" class="hover:text-dh-magenta transition-colors cursor-pointer">Cadernos</a></li>
+                        <li><a href="#categorias" class="hover:text-dh-magenta transition-colors cursor-pointer">Adesivos</a></li>
+                        <li><a href="#categorias" class="hover:text-dh-magenta transition-colors cursor-pointer">Canecas</a></li>
+                        <li><a href="#categorias" class="hover:text-dh-magenta transition-colors cursor-pointer">Especiais</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#sobre" class="hover:text-dh-magenta transition-colors cursor-pointer">Sobre Nós</a></li>
+                        <li><a href="https://wa.me/5512992495483?text=Vim%20atrav%C3%A9s%20do%20site%2C%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es" target="_blank" class="hover:text-dh-magenta transition-colors cursor-pointer">Contato</a></li>
+                        <li><a href="https://wa.me/5512992495483?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20algumas%20d%C3%BAvidas" target="_blank" class="hover:text-dh-magenta transition-colors cursor-pointer">FAQ</a></li>
+                        <li><a href="#produtos" class="hover:text-dh-magenta transition-colors cursor-pointer">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Redes Sociais</h4>
+                    <div class="flex gap-3">
+                        <a href="https://www.instagram.com/dhpersonalizadosepapelaria/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-dh-gold/20 rounded-lg flex items-center justify-center hover:bg-dh-gold transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/><path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://wa.me/5512992495483?text=Vim%20atrav%C3%A9s%20do%20site%2C%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-green-600/20 rounded-lg flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-dh-magenta/20 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Dragon Heart. Todos os direitos reservados. Feito com ❤️ para a comunidade geek.</p>
+                <p class="mt-2 text-xs">Desenvolvido por <span class="text-dh-magenta font-semibold">Patrick Lopes</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script-integrated.js"></script>
+</body>
+</html>
